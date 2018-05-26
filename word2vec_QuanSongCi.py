@@ -257,6 +257,7 @@ with tf.Session(graph=graph) as session:
           log_str = '%s %s,' % (log_str, close_word)
         print(log_str)
   final_embeddings = normalized_embeddings.eval()
+  np.save("embedding.npy",final_embeddings)
 
 # Step 6: Visualize the embeddings.
 
